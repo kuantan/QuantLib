@@ -53,7 +53,7 @@
 using namespace QuantLib;
 using namespace boost::unit_test_framework;
 
-namespace {
+namespace libor_market_model_test {
 
     ext::shared_ptr<IborIndex> makeIndex(std::vector<Date> dates,
                                            std::vector<Rate> rates) {
@@ -114,6 +114,8 @@ namespace {
 
 void LiborMarketModelTest::testSimpleCovarianceModels() {
     BOOST_TEST_MESSAGE("Testing simple covariance models...");
+
+    using namespace libor_market_model_test;
 
     SavedSettings backup;
 
@@ -192,6 +194,8 @@ void LiborMarketModelTest::testSimpleCovarianceModels() {
 void LiborMarketModelTest::testCapletPricing() {
     BOOST_TEST_MESSAGE("Testing caplet pricing...");
 
+    using namespace libor_market_model_test;
+
     SavedSettings backup;
 
     const Size size = 10;
@@ -244,6 +248,8 @@ void LiborMarketModelTest::testCapletPricing() {
 
 void LiborMarketModelTest::testCalibration() {
     BOOST_TEST_MESSAGE("Testing calibration of a Libor forward model...");
+
+    using namespace libor_market_model_test;
 
     SavedSettings backup;
 
@@ -349,6 +355,8 @@ void LiborMarketModelTest::testCalibration() {
 void LiborMarketModelTest::testSwaptionPricing() {
     BOOST_TEST_MESSAGE("Testing forward swap and swaption pricing...");
 
+    using namespace libor_market_model_test;
+
     SavedSettings backup;
 
     const Size size  = 10;
@@ -412,9 +420,6 @@ void LiborMarketModelTest::testSwaptionPricing() {
     BusinessDayConvention convention = index->businessDayConvention();
 
     Date settlement  = index->forwardingTermStructure()->referenceDate();
-
-    ext::shared_ptr<SwaptionVolatilityMatrix> m =
-                liborModel->getSwaptionVolatilityMatrix();
 
     for (i=1; i < size; ++i) {
         for (Size j=1; j <= size-i; ++j) {

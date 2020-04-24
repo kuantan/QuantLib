@@ -1010,9 +1010,11 @@
     <ClInclude Include="ql\math\integrals\filonintegral.hpp" />
     <ClInclude Include="ql\math\integrals\gaussianorthogonalpolynomial.hpp" />
     <ClInclude Include="ql\math\integrals\gaussianquadratures.hpp" />
+    <ClInclude Include="ql\math\integrals\gausslaguerrecosinepolynomial.hpp" />
     <ClInclude Include="ql\math\integrals\gausslobattointegral.hpp" />
     <ClInclude Include="ql\math\integrals\integral.hpp" />
     <ClInclude Include="ql\math\integrals\kronrodintegral.hpp" />
+    <ClInclude Include="ql\math\integrals\momentbasedgaussianpolynomial.hpp" />
     <ClInclude Include="ql\math\integrals\segmentintegral.hpp" />
     <ClInclude Include="ql\math\integrals\simpsonintegral.hpp" />
     <ClInclude Include="ql\math\integrals\trapezoidintegral.hpp" />
@@ -1619,6 +1621,7 @@
     <ClInclude Include="ql\termstructures\credit\probabilitytraits.hpp" />
     <ClInclude Include="ql\termstructures\credit\survivalprobabilitystructure.hpp" />
     <ClInclude Include="ql\termstructures\defaulttermstructure.hpp" />
+    <ClInclude Include="ql\termstructures\globalbootstrap.hpp" />
     <ClInclude Include="ql\termstructures\inflation\all.hpp" />
     <ClInclude Include="ql\termstructures\inflation\inflationhelpers.hpp" />
     <ClInclude Include="ql\termstructures\inflation\inflationtraits.hpp" />
@@ -1709,6 +1712,7 @@
     <ClInclude Include="ql\termstructures\yield\forwardspreadedtermstructure.hpp" />
     <ClInclude Include="ql\termstructures\yield\forwardstructure.hpp" />
     <ClInclude Include="ql\termstructures\yield\impliedtermstructure.hpp" />
+    <ClInclude Include="ql\termstructures\yield\interpolatedsimplezerocurve.hpp" />
     <ClInclude Include="ql\termstructures\yield\nonlinearfittingmethods.hpp" />
     <ClInclude Include="ql\termstructures\yield\oisratehelper.hpp" />
     <ClInclude Include="ql\termstructures\yield\piecewiseyieldcurve.hpp" />
